@@ -1,0 +1,123 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Темно-сірий фон */
+    color: #fff; /* Білий текст */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #FFA500; /* Помаранчевий */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #1F1F1F; /* Темно-сірий */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+/* Форма */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #FFA500; /* Помаранчевий */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFA500; /* Помаранчевий бордер */
+    border-radius: 5px;
+    background-color: #2A2A2A; /* Трохи світліший сірий */
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #FF8700; /* Темніший помаранчевий */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+/* Кнопки */
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-success {
+    background-color: #FFA500; /* Помаранчевий */
+    color: #121212; /* Темний текст */
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: #FF8700; /* Темніший помаранчевий */
+    color: #fff;
+}
+
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff; /* Білий текст */
+    background-color: #2A2A2A; /* Темно-сірий фон */
+    border: 1px solid #FFA500; /* Помаранчевий бордер */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #fff; /* Білий текст */
+    background-color: #FFA500; /* Помаранчевий */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #FF8700; /* Темніший помаранчевий */
+}
+
+input[type="file"]:focus {
+    border-color: #FF8700; /* Темніший помаранчевий */
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}

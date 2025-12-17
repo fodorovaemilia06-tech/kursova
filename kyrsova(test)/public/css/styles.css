@@ -1,0 +1,327 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Секція товарів */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Центруємо по горизонталі */
+    justify-content: center;  /* Центруємо по вертикалі */
+    text-align: center; /* Центруємо текст */
+}
+
+/* Стилізація зображень товарів на сторінці show */
+.product-image {
+    height: 250px; /* Встановлюємо фіксовану висоту зображення */
+    object-fit: cover; /* Зображення буде обрізане так, щоб не виходило за межі */
+    border-radius: 8px; /* Округлені кути */
+    display: block; /* Встановлюємо зображення як блок для вирівнювання */
+    margin: 0 auto; /* Центруємо зображення по горизонталі */
+    object-position: center; /* Центруємо зображення всередині контейнера */
+}
+
+.product img {
+    height: 130px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #28a745;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #28a745;
+}
+
+/* Стилі для сторінки деталей товару */
+.product-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-detail img {
+    height: 231px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.product-detail p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.product-detail .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-detail .category {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+
+/* Стилі для списку акцій */
+.promotions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.promotion-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    transition: all 0.3s ease; /* Додаємо анімацію для підсвічування */
+    overflow: hidden;
+}
+
+.promotion-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.promotion-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Додаємо ефект підсвічування при наведенні */
+.promotion-card:hover {
+    background-color: #f1f1f1;  /* Легке підсвічування на світлий колір */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Тінь при наведенні */
+    transform: translateY(-5px); /* Легкий підйом при наведенні */
+}
+
+/* Заголовок акції */
+.promotion-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Відображення дати */
+.promotion-card strong {
+    color: #28a745;
+}
+
+/* Збільшена висота акцій для виведення повного опису */
+.promotion-card p {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+
+
+
+.search-form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative; /* Для абсолютного позиціонування підказок */
+}
+
+.search-form input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Задаємо ширину поля пошуку */
+    margin-right: 10px;
+    box-sizing: border-box; /* Врахування padding у ширину */
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0 0; /* Мінімальний відступ від поля пошуку */
+    background: #fff;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%; /* Розташування під полем пошуку */
+    left: 549px;
+    width: 300px; /* Ширина збігається з шириною поля пошуку */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Врахування padding у ширину */
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #000; /* Чорний текст */
+    font-size: 14px;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.no-results {
+    padding: 8px 12px;
+    color: #999;
+    font-size: 14px;
+}
+

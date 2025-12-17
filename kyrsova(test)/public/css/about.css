@@ -1,0 +1,115 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Чорний фон */
+    color: #f4f4f4; /* Світлий текст */
+}
+
+/* Header */
+header {
+    background-color: #333; /* Темно-сірий */
+    color: #FFA500; /* Помаранчевий */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFA500; /* Помаранчевий */
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #FFA500; /* Помаранчевий */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Темно-сірий */
+    color: #f4f4f4; /* Світлий текст */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #FFA500; /* Помаранчевий */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FF7F00; /* Світліший помаранчевий */
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Помаранчевий */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF7F00; /* Світліший помаранчевий */
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    background-color: #2c2c2c; /* Темно-сірий фон для контейнера */
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFA500; /* Помаранчевий */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #f4f4f4; /* Світлий текст */
+}

@@ -1,0 +1,97 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Темно-сірий фон */
+    color: #fff; /* Білий текст */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #dda90c; /* Помаранчевий заголовок */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-success {
+    background-color: #d51515; /* Помаранчевий */
+    color: #000000; /* Темний текст */
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #ce4d4d; /* Темніший помаранчевий */
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #dda90c; /* Чорний з легким сірим відтінком */
+    color: #000000; /* Помаранчевий текст */
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #444; /* Темніший чорний */
+    color: #fff;
+}
+
+
+
+/* Стилізація зображень товарів на сторінці show */
+.product-image {
+    height: 250px; /* Встановлюємо фіксовану висоту зображення */
+    object-fit: cover; /* Зображення буде обрізане так, щоб не виходило за межі */
+    border-radius: 8px; /* Округлені кути */
+    display: block; /* Встановлюємо зображення як блок для вирівнювання */
+    margin: 0 auto; /* Центруємо зображення по горизонталі */
+    object-position: center; /* Центруємо зображення всередині контейнера */
+}
+
+.product img {
+    height: 130px;
+    border-radius: 10px;
+}
+
+
+
+/* Секція товарів */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: rgb(102, 96, 96);
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
